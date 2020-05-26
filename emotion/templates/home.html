@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emotion Voice Detection</title>	
+<style>
+h2 {color: red;}
+body { text-align: center;
+	background-image: url("/static/d.jpg");
+	height: 100%;
+	
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    color: #8ac640;
+    font-size: 2.5em;
+}
+h3 {
+
+	ont-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    color: black;
+    font-size: 2.5em;
+
+}
+legend {
+    position:center;*/
+    top:20px;
+    left:18px;*/
+}​
+</style>
+</head>
+
+<body>
+
+
+<div class="block1">
+<h1> Système de reconnaissance des émotions vocales </h1>
+<h2> Veuillez commencer à enregistrer votre voix pour le traitement et la détection des émotions. </h2>
+</div>
+
+<form action="/record" method="get">
+  <fieldset>
+    <legend>Commencer l'enregistrement</legend>
+    <button name="record" type="submit" style="height:50px;width:200px"> Commencer </button>
+    
+  </fieldset>
+</form>
+
+
+<img src="{{ url_for('static', filename='a.png')}}" width="400" height="300">
+
+<h3> Tous les droits sont réservés </h3>
+</body>
+</html>
+
